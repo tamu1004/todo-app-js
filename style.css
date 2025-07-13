@@ -498,5 +498,33 @@ select:hover{
 }
         font-size: 16px;
     }
+     .EndInput {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+        margin-bottom: 15px;
+    }
+    .EndInput input[type="date"] {
+        all: unset; /* ← まずリセット */
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px 12px;
+        border-radius: 12px;
+        border: 1.5px solid #ccc;
+        background: #fff;
+        font-size: 16px;
+        color: #222;
+        margin-bottom: 0;
+        appearance: auto; /* ← これが重要！ */
+    }
+    #addButton,
+    #addListButton {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 16px;
+    }
 }
 
