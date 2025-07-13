@@ -41,6 +41,10 @@ body{
 
 .EndInput{
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 #ToDo-container{
@@ -396,7 +400,96 @@ select:hover{
 }
 
 @media(max-width: 430px){
+    #newToDoApp{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    .AddToDo-field{
+        width: 100vw;
+        min-height: 100vh;
+    }
+    
+    .first-container{
+        width: 100vw;
+    }
+    
+    .second-container{
+        width: 100vw;
+        min-height: 100vh;
+        left: -100vw;
+    }
+    
+    .second-container.active{
+        left: -100vw;
+    }
+    
+    .third-container{
+        width: 100vw;
+        min-height: 100vh;
+    }
+    
     .EndInput{
-        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    
+    #deadline{
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    #addButton, #addListButton{
+        flex: 0 0 auto;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    #todo{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    #Tasktxt{
+        width: 100%;
+    }
+    
+    .title{
+        font-size: 24px;
+    }
+    
+    .CreateNewList{
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+    
+    .createList{
+        padding: 15px 20px;
+        width: auto;
+        position: relative;
+    }
+    
+    .createtxt{
+        position: relative;
+        left: auto;
+        margin: 0;
+    }
+    
+    .arrow{
+        position: relative;
+        right: auto;
+        margin: 0;
+        margin-left: 10px;
+    }
+    
+    .white{
+        width: 90vw;
+        max-width: 300px;
     }
 }
