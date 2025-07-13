@@ -394,3 +394,16 @@ select:hover{
     top: 50%;
     padding-top: 10px;
 }
+@media (max-width: 600px) {
+  .second-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+    overflow-y: auto;
+    transform: translateX(0);
+  }
+}
