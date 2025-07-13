@@ -395,11 +395,18 @@ select:hover{
     padding-top: 10px;
 }
 
-@media (max-width: 370px) {
+@media (max-width: 600px) {
+    html, body {
+        width: 100vw;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
     #newToDoApp {
         flex-direction: column;
         align-items: center;
         width: 100vw;
+        min-width: 0;
+        box-sizing: border-box;
     }
     .AddToDo-field,
     .all-lyout,
@@ -415,6 +422,7 @@ select:hover{
         left: 0;
         min-height: 0;
         background-color: azure;
+        box-sizing: border-box;
     }
     .todo-contents {
         width: 92vw;
@@ -424,6 +432,7 @@ select:hover{
         padding-left: 12px;
         background: rgb(225, 225, 225);
         margin: 0 auto;
+        box-sizing: border-box;
     }
     .humburger-container {
         padding-left: 0;
@@ -438,6 +447,7 @@ select:hover{
         position: static;
         left: unset;
         right: unset;
+        box-sizing: border-box;
     }
     .white {
         width: 90vw;
@@ -445,21 +455,25 @@ select:hover{
         margin-top: 40px;
         background-color: rgb(239, 239, 239);
         border-radius: 16px;
+        box-sizing: border-box;
     }
     .createdname {
         width: 90vw;
         max-width: 320px;
         background-color: rgb(204, 204, 204);
         border-radius: 16px;
+        box-sizing: border-box;
     }
     .Addfield {
         max-width: 340px;
         margin: 0 auto;
+        box-sizing: border-box;
     }
     .BackButton {
         width: 70%;
         max-width: 200px;
         font-size: 18px;
+        box-sizing: border-box;
     }
     .TitleInput {
         margin-left: 10px;
@@ -470,6 +484,7 @@ select:hover{
         width: 100vw;
         border-radius: 0;
         background-color: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
     }
     .EndInput {
         display: flex;
@@ -479,34 +494,7 @@ select:hover{
         margin-bottom: 15px;
     }
     .EndInput input[type="date"] {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 5px;
-        border-radius: 12px;
-        border: 2px solid transparent;
-        box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.3);
-        background: #fff;
-        font-size: 16px;
-    }
-    #addButton,
-    #addListButton {
-        width: 100%;
-        box-sizing: border-box;
-        margin: 0;
-        font-size: 16px;
-    }
-}
-        font-size: 16px;
-    }
-     .EndInput {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        align-items: stretch;
-        margin-bottom: 15px;
-    }
-    .EndInput input[type="date"] {
-        all: unset; /* ← まずリセット */
+        all: unset;
         display: block;
         width: 100%;
         box-sizing: border-box;
@@ -517,7 +505,7 @@ select:hover{
         font-size: 16px;
         color: #222;
         margin-bottom: 0;
-        appearance: auto; /* ← これが重要！ */
+        appearance: auto;
     }
     #addButton,
     #addListButton {
@@ -527,4 +515,3 @@ select:hover{
         font-size: 16px;
     }
 }
-
