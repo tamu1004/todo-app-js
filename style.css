@@ -395,73 +395,168 @@ select:hover{
     padding-top: 10px;
 }
 
- @media (max-width: 480px) {
-            .AddToDo-field, .all-lyout, .third-container, .second-container {
+ @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+            
+            #newToDoApp {
+                flex-direction: column;
                 width: 100vw;
+                min-width: unset;
                 max-width: 100vw;
-                margin: 0;
+            }
+            
+            .AddToDo-field,
+            .all-lyout,
+            .third-container,
+            .first-container {
+                width: 100vw;
+                min-width: unset;
+                max-width: 100vw;
+                left: 0;
                 border-radius: 0;
+                min-height: 100vh;
+                box-sizing: border-box;
             }
-
-            .title {
-                font-size: 24px;
+            
+            .second-container,
+            .second-container.active {
+                width: 100vw;
+                min-width: unset;
+                max-width: 100vw;
+                left: 0;
+                border-radius: 0;
+                min-height: 100vh;
+                box-sizing: border-box;
+                transform: translateX(-100%);
             }
-
+            
+            .second-container.active {
+                transform: translateX(0);
+                left: 0;
+            }
+            
             #todo {
-                margin-left: 20px;
-                margin-right: 20px;
+                margin-left: 5vw;
+                margin-right: 5vw;
             }
-
+            
             #Tasktxt {
                 width: 100%;
+                max-width: 90vw;
             }
-
+            
+            /* 修正：スマホでの横並びレイアウト */
             .EndInput {
-                display: flex;
-                flex-direction: row;
+                flex-wrap: nowrap;
+                overflow-x: auto;
                 gap: 5px;
-                align-items: center;
-                flex-wrap: wrap;
+                padding-right: 5vw;
             }
-
-            .EndInput > * {
-                flex: 1;
-                min-width: 0;
+            
+            #deadline {
+                min-width: 110px;
+                max-width: 130px;
+                flex-shrink: 0;
             }
-
-            input[type="date"] {
-                font-size: 14px;
-                padding: 8px 4px;
-            }
-
+            
             #addButton, #addListButton {
                 font-size: 11px;
-                padding: 8px 2px;
-                text-align: center;
+                padding: 6px 10px;
+                flex-shrink: 0;
+                min-width: 50px;
             }
-
-            .white {
+            
+            .todo-contents {
+                width: 95vw;
+                min-width: unset;
+                max-width: 95vw;
+                border-radius: 0;
+                padding-left: 2vw;
+                box-sizing: border-box;
+            }
+            
+            .ToDoInfo {
                 width: 95%;
-                margin: 10px;
+                flex-wrap: wrap;
             }
-
-            .TitleInput {
-                margin-left: 20px;
+            
+            .TaskBox {
+                width: 100%;
+                margin-bottom: 5px;
             }
-
+            
+            .DeadLineBox {
+                width: 50%;
+            }
+            
+            .CompletedBox {
+                width: 50%;
+            }
+            
+            .humburger-container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            
             .createList {
-                width: 90%;
-                padding: 15px 20px;
-                text-align: center;
+                padding: 10px 10vw 20px 10vw;
+                width: 80vw;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                position: relative;
             }
-
-            .createtxt {
-                position: static;
-                margin: 0;
+            
+            .white {
+                width: 90vw;
+                margin-top: 100px;
             }
-
-            .arrow {
-                position: static;
-                margin: 0;
+            
+            .createdname {
+                width: 70vw;
+                max-width: 70vw;
+            }
+            
+            .buttonContainer {
+                flex-wrap: wrap;
+                gap: 5px;
+                justify-content: center;
+            }
+            
+            .displaybutton, .addlistbutton {
+                padding: 8px 12px;
+                flex-shrink: 0;
+            }
+            
+            .Addfield {
+                max-width: 100vw;
+                padding: 0 2vw;
+                box-sizing: border-box;
+            }
+            
+            .BackButton {
+                width: 50vw;
+                font-size: 18px;
+            }
+            
+            .TitleInput {
+                margin-left: 10px;
+                margin-bottom: 30px;
+            }
+            
+            #CreateForm {
+                min-height: 100vh;
+                width: 100vw;
+                border-radius: 0;
+            }
+            
+            .CreateNewList {
+                bottom: 20px;
+                margin-left: 0;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
             }
         }
