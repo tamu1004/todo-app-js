@@ -10,7 +10,7 @@ body{
 .AddToDo-field{
     position: relative;
     background-color: azure;
-    width: 390px;
+    width: 380px;
     height: 600px;
     border-radius: 20px;
 
@@ -18,7 +18,7 @@ body{
 
 .first-container{
     background-color: azure;
-    width: 390px;
+    width: 380px;
     height: 600px;
     border-radius: 20px;
     left: 0; 
@@ -114,7 +114,7 @@ body{
 .all-lyout{
     position: relative;
     background-color: azure;
-    width: 390px;
+    width: 380px;
     min-height:600px;
     border-radius: 20px;
   
@@ -123,8 +123,8 @@ body{
 .third-container{
     position: relative;
     background-color: azure;
-    width: 390px;
-    min-height:650px;
+    width: 380px;
+    min-height: 600px;
     border-radius: 20px;
     z-index: 998;
     display: none;
@@ -215,8 +215,8 @@ select:hover{
 .second-container{
     position: relative;
     background-color: rgb(242, 242, 242);
-    width: 390px;
-    min-height:650px;
+    width: 380px;
+    min-height: 600px;
     border-radius: 20px;
     left: -400px;
     transition: transform 0.4s ease;
@@ -225,8 +225,8 @@ select:hover{
 }
 .second-container.active{
     position: relative;
-    width: 390px;
-    min-height:600px;
+    width: 380px;
+    min-height: 600px;
     left: -390px;
     transform: translateX(0);
     background-color: rgba(0, 0, 0, 0.8);
@@ -270,7 +270,7 @@ select:hover{
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    min-height:650px;
+    min-height: 600px;
     width: 100%;
     border-radius: 20px;
     display: none;
@@ -494,16 +494,16 @@ select:hover{
         max-width: 300px;
     }
     #CreateForm{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    min-height:650px;
-    width: 100%;
-    border-radius: 20px;
-    display: none;
-    z-index: 998;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        min-height: 600px;
+        width: 380px;
+        border-radius: 20px;
+        display: none;
+        z-index: 998;
 
 }
 }
