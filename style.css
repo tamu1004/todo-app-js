@@ -163,9 +163,6 @@ input:focus{
     border-color: rgb(132, 0, 255);
 }
 
-#deadline{
-    width: 30%;
-}
 
 .delete-btn{
     all: unset; 
