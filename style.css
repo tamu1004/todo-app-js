@@ -402,3 +402,8 @@ select:hover{
     top: 50%;
     padding-top: 10px;
 }
+@media(width: 430px){
+    #deadline{
+        width: 30%;
+    }
+}
